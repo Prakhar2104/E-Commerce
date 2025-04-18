@@ -6,7 +6,8 @@ Prakhar Sports is a modern e-commerce website built for selling a wide variety o
 
 🔍 Search & filter functionality
 
-🧺 Add to cart, update quantity, and remove items
+🧺 Add to cart, update quantity, and remove items too
+
 
 💳 Checkout process (payment integration optional/dummy)
 
