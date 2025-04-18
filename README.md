@@ -2,7 +2,7 @@
 Prakhar Sports is a modern e-commerce website built for selling a wide variety of sports equipment. Designed with performance and user experience in mind, it includes features like product browsing, cart functionality, and a secure checkout process.
 
 🚀 Features
-🛒 Product listing & categories (e.g., cricket, football, fitness, etc.)
+🛒 Product listing & categories (e.g., cricket, football,Nutrients, fitness, etc.)
 
 🔍 Search & filter functionality
 
