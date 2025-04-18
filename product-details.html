@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Prakhar Sports</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Prakhar<span>Sports</span></h1>
+                </a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Cricket</a></li>
+                    <li><a href="#">Football</a></li>
+                    <li><a href="#">Fitness</a></li>
+                    <li><a href="#">Apparel</a></li>
+                    <li><a href="#">Accessories</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <a href="account.html" class="icon-link"><i class="fas fa-user"></i></a>
+                <a href="wishlist.html" class="icon-link"><i class="fas fa-heart"></i></a>
+                <a href="cart.html" class="icon-link cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Details Content -->
+    <main class="product-details-page">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="products.html">Products</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Product Name</span>
+            </div>
+
+            <!-- Product Details Section -->
+            <div class="product-details-section">
+                <!-- Product Gallery -->
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img height="10" width="10" src="images/products/cricketbat.jpg "alt="Product Image">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="images/products/cricketbat.jpg" alt="Cricket Bat">
+                        <img src="images/products/cricketpad.jpg" alt="Cricket pad">
+                        <img src="images/products/CricketStumps.jpg" alt="Cricket stumps">
+                        <img src="images/products/CricketBall.jpg" alt="Cricket Ball">
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <h1>Premium Cricket Bat</h1>
+                    <div class="product-meta">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(42 reviews)</span>
+                        </div>
+                        <div class="availability">
+                            <i class="fas fa-check-circle"></i>
+                            <span>In Stock</span>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <span class="current-price">₹4,999</span>
+                        <span class="original-price">₹6,999</span>
+                        <span class="discount">-29%</span>
+                    </div>
+                    <div class="product-description">
+                        <p>Experience superior performance with our premium cricket bat. Made from high-quality English willow, this bat offers excellent balance and power. Perfect for professional and amateur players alike.</p>
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> Premium English Willow</li>
+                            <li><i class="fas fa-check"></i> Perfect Balance</li>
+                            <li><i class="fas fa-check"></i> Professional Grade</li>
+                            <li><i class="fas fa-check"></i> 6 Months Warranty</li>
+                        </ul>
+                    </div>
+                    <div class="product-actions">
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+                            <input type="number" value="1" min="1" max="10">
+                            <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <button class="btn add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-outline add-to-wishlist">
+                            <i class="fas fa-heart"></i>
+                            Add to Wishlist
+                        </button>
+                    </div>
+                    <div class="product-meta-details">
+                        <div class="meta-item">
+                            <i class="fas fa-truck"></i>
+                            <span>Free Shipping</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-undo"></i>
+                            <span>7 Days Return</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Secure Payment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Tabs -->
+            <div class="product-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="description">Description</button>
+                    <button class="tab-btn" data-tab="specifications">Specifications</button>
+                    <button class="tab-btn" data-tab="reviews">Reviews</button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="description">
+                        <h3>Product Description</h3>
+                        <p>Our premium cricket bat is crafted from the finest English willow, ensuring superior performance and durability. The bat features a traditional shape with a slightly curved face, providing excellent balance and power. The handle is made from premium cane and rubber, offering a comfortable grip and reducing vibration on impact.</p>
+                        <p>The bat comes with a protective cover and is ready to use straight out of the box. It's perfect for professional players and serious amateurs who demand the best equipment for their game.</p>
+                    </div>
+                    <div class="tab-pane" id="specifications">
+                        <h3>Specifications</h3>
+                        <table class="specs-table">
+                            <tr>
+                                <th>Material</th>
+                                <td>English Willow</td>
+                            </tr>
+                            <tr>
+                                <th>Weight</th>
+                                <td>1.2 kg</td>
+                            </tr>
+                            <tr>
+                                <th>Length</th>
+                                <td>86 cm</td>
+                            </tr>
+                            <tr>
+                                <th>Handle</th>
+                                <td>Cane & Rubber</td>
+                            </tr>
+                            <tr>
+                                <th>Grip</th>
+                                <td>Premium Rubber</td>
+                            </tr>
+                            <tr>
+                                <th>Warranty</th>
+                                <td>6 Months</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="tab-pane" id="reviews">
+                        <h3>Customer Reviews</h3>
+                        <div class="review-summary">
+                            <div class="average-rating">
+                                <span class="rating-value">4.5</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="total-reviews">42 Reviews</span>
+                            </div>
+                            <div class="rating-bars">
+                                <div class="rating-bar">
+                                    <span>5 Stars</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 70%"></div>
+                                    </div>
+                                    <span>70%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>4 Stars</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 20%"></div>
+                                    </div>
+                                    <span>20%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>3 Stars</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 5%"></div>
+                                    </div>
+                                    <span>5%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>2 Stars</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 3%"></div>
+                                    </div>
+                                    <span>3%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>1 Star</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 2%"></div>
+                                    </div>
+                                    <span>2%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-list">
+                            <div class="review">
+                                <div class="review-header">
+                                    <div class="reviewer">
+                                        <img src="images/icons/user-avatar.jpg" alt="User Avatar">
+                                        <div>
+                                            <h4>John Doe</h4>
+                                            <div class="rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="review-date">2 days ago</span>
+                                </div>
+                                <p class="review-text">Excellent bat! The quality of the willow is superb, and the balance is perfect. Would definitely recommend to serious players.</p>
+                            </div>
+                            <div class="review">
+                                <div class="review-header">
+                                    <div class="reviewer">
+                                        <img src="images/icons/user-avatar.jpg" alt="User Avatar">
+                                        <div>
+                                            <h4>Jane Smith</h4>
+                                            <div class="rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="review-date">1 week ago</span>
+                                </div>
+                                <p class="review-text">Great bat for the price. The grip is comfortable, and the weight distribution is excellent. Very satisfied with my purchase.</p>
+                            </div>
+                        </div>
+                        <button class="btn load-more-reviews">Load More Reviews</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Products -->
+            <div class="related-products">
+                <h2>You May Also Like</h2>
+                <div class="products-grid">
+                    <!-- Related product cards will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Prakhar Sports</h3>
+                    <p>Your trusted destination for sports equipment and activewear. Gear up for your best performance with quality products.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Product Categories</h4>
+                    <ul>
+                        <li><a href="#">Cricket</a></li>
+                        <li><a href="#">Football</a></li>
+                        <li><a href="#">Fitness</a></li>
+                        <li><a href="#">Apparel</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Sports Avenue, Lucknow, India</li>
+                        <li><i class="fas fa-phone"></i> +91 8433377794</li>
+                        <li><i class="fas fa-envelope"></i> info@prakharsports.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 9:00 AM - 9:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="payment-icons">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-google-pay"></i>
+                    <i class="fab fa-apple-pay"></i>
+                </div>
+                <p>&copy; 2023 Prakhar Sports. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Prakhar Sports</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Prakhar<span>Sports</span></h1>
+                </a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Cricket</a></li>
+                    <li><a href="#">Football</a></li>
+                    <li><a href="#">Fitness</a></li>
+                    <li><a href="#">Apparel</a></li>
+                    <li><a href="#">Accessories</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <a href="account.html" class="icon-link"><i class="fas fa-user"></i></a>
+                <a href="wishlist.html" class="icon-link"><i class="fas fa-heart"></i></a>
+                <a href="cart.html" class="icon-link cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Blog Page Content -->
+    <main class="blog-page">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Blog</span>
+            </div>
+
+            <!-- Page Header -->
+            <div class="page-header">
+                <h1>Sports Blog</h1>
+                <p>Stay updated with the latest news, tips, and trends in sports.</p>
+            </div>
+
+            <!-- Blog Content -->
+            <div class="blog-content">
+                <!-- Main Content -->
+                <div class="blog-main">
+                    <!-- Featured Article -->
+                    <article class="blog-post featured">
+                        <div class="post-image">
+                            <img src="images/blog/cricket-tips.jpg" alt="Cricket Tips">
+                            <div class="post-category">Cricket</div>
+                        </div>
+                        <div class="post-content">
+                            <h2>Essential Cricket Batting Tips for Beginners</h2>
+                            <div class="post-meta">
+                                <span><i class="fas fa-user"></i> By Admin</span>
+                                <span><i class="fas fa-calendar"></i> June 15, 2023</span>
+                                <span><i class="fas fa-comments"></i> 12 Comments</span>
+                            </div>
+                            <p>Master the basics of cricket batting with our comprehensive guide. Learn about stance, grip, footwork, and essential shots that every beginner should know.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </article>
+
+                    <!-- Regular Articles -->
+                    <div class="blog-grid">
+                        <article class="blog-post">
+                            <div class="post-image">
+                                <img src="images/blog/trainer.jpg" alt="Football Training">
+                                <div class="post-category">Football</div>
+                            </div>
+                            <div class="post-content">
+                                <h3>Advanced Football Training Drills</h3>
+                                <div class="post-meta">
+                                    <span><i class="fas fa-user"></i> By Coach Mike</span>
+                                    <span><i class="fas fa-calendar"></i> June 12, 2023</span>
+                                </div>
+                                <p>Improve your football skills with these advanced training drills designed for serious players.</p>
+                                <a href="#" class="btn btn-outline">Read More</a>
+                            </div>
+                        </article>
+
+                        <article class="blog-post">
+                            <div class="post-image">
+                                <img src="images/blog/fitness.jpg" alt="Fitness Guide">
+                                <div class="post-category">Fitness</div>
+                            </div>
+                            <div class="post-content">
+                                <h3>Complete Home Workout Guide</h3>
+                                <div class="post-meta">
+                                    <span><i class="fas fa-user"></i> By Sarah</span>
+                                    <span><i class="fas fa-calendar"></i> June 10, 2023</span>
+                                </div>
+                                <p>Stay fit at home with our comprehensive workout guide. No equipment needed!</p>
+                                <a href="#" class="btn btn-outline">Read More</a>
+                            </div>
+                        </article>
+
+                        <article class="blog-post">
+                            <div class="post-image">
+                                <img src="images/blog/nutrition.webp" alt="Sports Nutrition">
+                                <div class="post-category">Nutrition</div>
+                            </div>
+                            <div class="post-content">
+                                <h3>Sports Nutrition: What to Eat</h3>
+                                <div class="post-meta">
+                                    <span><i class="fas fa-user"></i> By Dr. Smith</span>
+                                    <span><i class="fas fa-calendar"></i> June 8, 2023</span>
+                                </div>
+                                <p>Learn about the best foods to fuel your workouts and improve performance.</p>
+                                <a href="#" class="btn btn-outline">Read More</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <button class="btn btn-outline prev-page"><i class="fas fa-chevron-left"></i></button>
+                        <div class="page-numbers">
+                            <button class="active">1</button>
+                            <button>2</button>
+                            <button>3</button>
+                            <span>...</span>
+                            <button>8</button>
+                        </div>
+                        <button class="btn btn-outline next-page"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="blog-sidebar">
+                    <!-- Search Widget -->
+                    <div class="sidebar-widget search-widget">
+                        <form>
+                            <input type="text" placeholder="Search articles...">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+
+                    <!-- Categories Widget -->
+                    <div class="sidebar-widget categories-widget">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li><a href="#">Cricket <span>(15)</span></a></li>
+                            <li><a href="#">Football <span>(12)</span></a></li>
+                            <li><a href="#">Fitness <span>(8)</span></a></li>
+                            <li><a href="#">Nutrition <span>(6)</span></a></li>
+                            <li><a href="#">Training Tips <span>(10)</span></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Recent Posts Widget -->
+                    <div class="sidebar-widget recent-posts-widget">
+                        <h3>Recent Posts</h3>
+                        <div class="recent-post">
+                            <img src="images/blog/cricket-tips.jpg" alt="Recent Post">
+                            <div>
+                                <h4><a href="#">Top 10 Cricket Bats for 2023</a></h4>
+                                <span>June 5, 2023</span>
+                            </div>
+                        </div>
+                        <div class="recent-post">
+                            <img src="images/blog/football.jpg" alt="Recent Post">
+                            <div>
+                                <h4><a href="#">Best Football Cleats Review</a></h4>
+                                <span>June 3, 2023</span>
+                            </div>
+                        </div>
+                        <div class="recent-post">
+                            <img src="images/blog/recent-3.jpg" alt="Recent Post">
+                            <div>
+                                <h4><a href="#">Pre-Workout Nutrition Guide</a></h4>
+                                <span>June 1, 2023</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tags Widget -->
+                    <div class="sidebar-widget tags-widget">
+                        <h3>Popular Tags</h3>
+                        <div class="tags">
+                            <a href="#">Cricket</a>
+                            <a href="#">Football</a>
+                            <a href="#">Fitness</a>
+                            <a href="#">Training</a>
+                            <a href="#">Nutrition</a>
+                            <a href="#">Equipment</a>
+                            <a href="#">Tips</a>
+                            <a href="#">Workout</a>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Widget -->
+                    <div class="sidebar-widget newsletter-widget">
+                        <h3>Newsletter</h3>
+                        <p>Subscribe to our newsletter for the latest updates and sports tips.</p>
+                        <form>
+                            <input type="email" placeholder="Your email address">
+                            <button type="submit" class="btn">Subscribe</button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Prakhar Sports</h3>
+                    <p>Your trusted destination for sports equipment and activewear. Gear up for your best performance with quality products.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Product Categories</h4>
+                    <ul>
+                        <li><a href="#">Cricket</a></li>
+                        <li><a href="#">Football</a></li>
+                        <li><a href="#">Fitness</a></li>
+                        <li><a href="#">Apparel</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Sports Avenue, Lucknow, India</li>
+                        <li><i class="fas fa-phone"></i> +91 8433377794</li>
+                        <li><i class="fas fa-envelope"></i> info@prakharsports.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 9:00 AM - 9:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="payment-icons">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-google-pay"></i>
+                    <i class="fab fa-apple-pay"></i>
+                </div>
+                <p>&copy; 2023 Prakhar Sports. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 

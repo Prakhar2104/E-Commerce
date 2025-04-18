@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Prakhar Sports</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Prakhar<span>Sports</span></h1>
+                </a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Cricket</a></li>
+                    <li><a href="#">Football</a></li>
+                    <li><a href="#">Fitness</a></li>
+                    <li><a href="#">Apparel</a></li>
+                    <li><a href="#">Accessories</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <a href="account.html" class="icon-link"><i class="fas fa-user"></i></a>
+                <a href="wishlist.html" class="icon-link"><i class="fas fa-heart"></i></a>
+                <a href="cart.html" class="icon-link cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Products Page Content -->
+    <main class="products-page">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Products</span>
+            </div>
+
+            <!-- Page Header -->
+            <div class="page-header">
+                <h1>All Products</h1>
+                <div class="view-options">
+                    <button class="view-btn active" data-view="grid"><i class="fas fa-th"></i></button>
+                    <button class="view-btn" data-view="list"><i class="fas fa-list"></i></button>
+                </div>
+            </div>
+
+            <!-- Products Section -->
+            <div class="products-section">
+                <!-- Filters Sidebar -->
+                <aside class="filters-sidebar">
+                    <div class="filter-group">
+                        <h3>Categories</h3>
+                        <ul class="filter-list">
+                            <li>
+                                <input type="checkbox" id="cricket" checked>
+                                <label for="cricket">Cricket</label>
+                                <span class="count">(24)</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="football">
+                                <label for="football">Football</label>
+                                <span class="count">(18)</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="fitness">
+                                <label for="fitness">Fitness</label>
+                                <span class="count">(32)</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="apparel">
+                                <label for="apparel">Apparel</label>
+                                <span class="count">(45)</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="accessories">
+                                <label for="accessories">Accessories</label>
+                                <span class="count">(28)</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Price Range</h3>
+                        <div class="price-range">
+                            <input type="range" min="0" max="10000" value="5000" class="price-slider">
+                            <div class="price-inputs">
+                                <input type="number" min="0" max="10000" value="0" class="min-price">
+                                <span>-</span>
+                                <input type="number" min="0" max="10000" value="10000" class="max-price">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Brands</h3>
+                        <ul class="filter-list">
+                            <li>
+                                <input type="checkbox" id="nike">
+                                <label for="nike">Nike</label>
+                                <span class="count">(15)</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="adidas">
+                                <label for="adidas">Adidas</label>
+                                <span class="count">(12)</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="puma">
+                                <label for="puma">Puma</label>
+                                <span class="count">(8)</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="reebok">
+                                <label for="reebok">Reebok</label>
+                                <span class="count">(6)</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Ratings</h3>
+                        <ul class="filter-list">
+                            <li>
+                                <input type="checkbox" id="rating-5">
+                                <label for="rating-5">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </label>
+                                <span class="count">(42)</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="rating-4">
+                                <label for="rating-4">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </label>
+                                <span class="count">(38)</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="rating-3">
+                                <label for="rating-3">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </label>
+                                <span class="count">(25)</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Availability</h3>
+                        <ul class="filter-list">
+                            <li>
+                                <input type="checkbox" id="in-stock">
+                                <label for="in-stock">In Stock</label>
+                                <span class="count">(147)</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="out-of-stock">
+                                <label for="out-of-stock">Out of Stock</label>
+                                <span class="count">(12)</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button class="btn apply-filters">Apply Filters</button>
+                    <button class="btn btn-outline reset-filters">Reset Filters</button>
+                </aside>
+
+                <!-- Products Grid -->
+                <div class="products-grid">
+                    <!-- Sort Options -->
+                    <div class="sort-options">
+                        <div class="sort-by">
+                            <label>Sort by:</label>
+                            <select>
+                                <option value="featured">Featured</option>
+                                <option value="newest">Newest</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="rating">Rating</option>
+                            </select>
+                        </div>
+                        <div class="show-count">
+                            <label>Show:</label>
+                            <select>
+                                <option value="12">12 per page</option>
+                                <option value="24">24 per page</option>
+                                <option value="36">36 per page</option>
+                                <option value="48">48 per page</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Products List -->
+                    <div class="products-list">
+                        <!-- Product cards will be dynamically inserted here -->
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <button class="btn btn-outline prev-page"><i class="fas fa-chevron-left"></i></button>
+                        <div class="page-numbers">
+                            <button class="active">1</button>
+                            <button>2</button>
+                            <button>3</button>
+                            <span>...</span>
+                            <button>10</button>
+                        </div>
+                        <button class="btn btn-outline next-page"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Prakhar Sports</h3>
+                    <p>Your trusted destination for sports equipment and activewear. Gear up for your best performance with quality products.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Product Categories</h4>
+                    <ul>
+                        <li><a href="#">Cricket</a></li>
+                        <li><a href="#">Football</a></li>
+                        <li><a href="#">Fitness</a></li>
+                        <li><a href="#">Apparel</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Sports Avenue, Lucknow, India</li>
+                        <li><i class="fas fa-phone"></i> +91 8433377794</li>
+                        <li><i class="fas fa-envelope"></i> info@prakharsports.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 9:00 AM - 9:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="payment-icons">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-google-pay"></i>
+                    <i class="fab fa-apple-pay"></i>
+                </div>
+                <p>&copy; 2023 Prakhar Sports. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
