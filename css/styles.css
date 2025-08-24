@@ -206,7 +206,7 @@ header .container {
 /* Hero Section */
 .hero {
     height: 70vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-bg.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://onecricketnews.akamaized.net/parth-editor/oc-dashboard/news-images-prod/1744603565785_lucknow_pitch%20(2).jpg?type=mq');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -291,11 +291,11 @@ header .container {
 }
 
 .category-img.apparel {
-    background-image: url('../images/categories/apparel.jpg');
+    background-image: url('https://image.freepik.com/free-photo/close-up-colorful-t-shirts-hangers-apparel-background_51195-3842.jpg');
 }
 
 .category-img.accessories {
-    background-image: url('../images/categories/accessories.jpg');
+    background-image: url('https://img.freepik.com/premium-photo/various-sport-equipment-many-different-accessories-background-generated-by-ai_986584-1079.jpg?w=2000');
 }
 
 .category-card h3 {
